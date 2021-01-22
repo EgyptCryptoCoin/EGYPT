@@ -1,0 +1,91 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   egyptd
+#
+# Untracked files:
+#	addrman.cpp
+#	addrman.h
+#	alert.cpp
+#	alert.h
+#	allocators.h
+#	base58.h
+#	bignum.h
+#	bitcoinrpc.cpp
+#	bitcoinrpc.h
+#	bloom.cpp
+#	bloom.h
+#	checkpoints.cpp
+#	checkpoints.h
+#	checkqueue.h
+#	clientversion.h
+#	coincontrol.h
+#	compat.h
+#	crypter.cpp
+#	crypter.h
+#	db.cpp
+#	db.h
+#	hash.cpp
+#	hash.h
+#	init.cpp
+#	init.h
+#	json/
+#	key.cpp
+#	key.h
+#	keystore.cpp
+#	keystore.h
+#	leveldb.cpp
+#	leveldb.h
+#	leveldb/
+#	limitedmap.h
+#	main.cpp
+#	main.h
+#	makefile.linux-mingw
+#	makefile.mingw
+#	makefile.osx
+#	makefile.unix
+#	mruset.h
+#	net.cpp
+#	net.h
+#	netbase.cpp
+#	netbase.h
+#	noui.cpp
+#	obj-test/
+#	obj/
+#	protocol.cpp
+#	protocol.h
+#	qt/
+#	rpcblockchain.cpp
+#	rpcdump.cpp
+#	rpcmining.cpp
+#	rpcnet.cpp
+#	rpcrawtransaction.cpp
+#	rpcwallet.cpp
+#	script.cpp
+#	script.h
+#	scrypt-sse2.cpp
+#	scrypt.cpp
+#	scrypt.h
+#	serialize.h
+#	sync.cpp
+#	sync.h
+#	test/
+#	threadsafety.h
+#	txdb.cpp
+#	txdb.h
+#	ui_interface.h
+#	uint256.h
+#	util.cpp
+#	util.h
+#	version.cpp
+#	version.h
+#	wallet.cpp
+#	wallet.h
+#	walletdb.cpp
+#	walletdb.h
+#
