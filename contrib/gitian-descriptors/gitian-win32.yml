@@ -1,5 +1,5 @@
 ---
-name: "egypt"
+name: "EGYPT"
 suites:
 - "precise"
 architectures:
@@ -31,7 +31,7 @@ script: |
   unzip ../build/bitcoin08-deps-win32-gitian-r13.zip
   cd $HOME/build/
   #
-  cd egypt
+  cd EGYPT
   export PATH=$STAGING/host/bin:$PATH
   mkdir -p $OUTDIR/src
   git archive HEAD | tar -x -C $OUTDIR/src
@@ -44,16 +44,16 @@ script: |
   $HOME/staging/host/bin/qmake -spec unsupported/win32-g++-cross MINIUPNPC_LIB_PATH=$STAGING MINIUPNPC_INCLUDE_PATH=$STAGING BDB_LIB_PATH=$STAGING BDB_INCLUDE_PATH=$STAGING BOOST_LIB_PATH=$STAGING BOOST_INCLUDE_PATH=$STAGING BOOST_LIB_SUFFIX=-mt-s BOOST_THREAD_LIB_SUFFIX=_win32-mt-s OPENSSL_LIB_PATH=$STAGING OPENSSL_INCLUDE_PATH=$STAGING QRENCODE_LIB_PATH=$STAGING QRENCODE_INCLUDE_PATH=$STAGING USE_QRCODE=1 INCLUDEPATH=$STAGING DEFINES=BOOST_THREAD_USE_LIB BITCOIN_NEED_QT_PLUGINS=1 QMAKE_LRELEASE=lrelease QMAKE_CXXFLAGS=-frandom-seed=egypt USE_BUILD_INFO=1 USE_SSE2=1
   make $MAKEOPTS
   $HOST-strip release/egypt-qt.exe
-  cp release/egypt-qt.exe $OUTDIR/
+  cp release/EGYPT-qt.exe $OUTDIR/
   #
   cd src
   export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
   export FAKETIME=$REFERENCE_DATETIME
   export TZ=UTC
-  make -f makefile.linux-mingw $MAKEOPTS DEPSDIR=$STAGING egyptd.exe USE_UPNP=0 DEBUGFLAGS="-frandom-seed=egypt" USE_SSE2=1
-  $HOST-strip egyptd.exe
+  make -f makefile.linux-mingw $MAKEOPTS DEPSDIR=$STAGING EGYPTd.exe USE_UPNP=0 DEBUGFLAGS="-frandom-seed=EGYPT" USE_SSE2=1
+  $HOST-strip EGYPTd.exe
   mkdir $OUTDIR/daemon
-  cp egyptd.exe $OUTDIR/daemon
+  cp EGYPTd.exe $OUTDIR/daemon
   cd ..
   mkdir nsis
   git archive HEAD | tar -x -C nsis
@@ -62,4 +62,4 @@ script: |
   cp ../../release/* ../release/
   cp ../../src/*.exe .
   makensis ../share/setup.nsi
-  cp ../share/egypt-*-win32-setup.exe $OUTDIR/
+  cp ../share/EGYPT-*-win32-setup.exe $OUTDIR/
