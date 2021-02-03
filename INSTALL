@@ -1,0 +1,9 @@
+Building Egypt
+
+See doc/readme-qt.rst for instructions on building Egypt-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Egypt.
+
+See doc/build-*.txt for instructions on building egyptd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Egypt.
